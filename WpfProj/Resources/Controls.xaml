@@ -4,8 +4,6 @@
                     xmlns:data="clr-namespace:WpfProj.Model"
                     >
 
-
-
     <DataTemplate DataType="{x:Type data:CDriverUser}">
         <StackPanel Orientation="Horizontal" Margin="0">
             <TextBlock Text="{Binding Path=Id, Mode=OneWay}" Width="15" FlowDirection="RightToLeft" Margin="5,0,2,0" />
@@ -16,8 +14,6 @@
                      Margin="5,0,0,0" />
             <TextBox Text="{Binding Path=PitTimeSec,  StringFormat={}{0:#.#0}, Mode=TwoWay}" Width="40" 
                      Margin="5,0,0,0" />
-            <!-- <TextBox Text="{Binding Path=LapTimeSec, StringFormat={}{0:#.#0}, Mode=TwoWay}" Width="50" 
-                     Margin="5,0,0,0" FlowDirection="RightToLeft" /> -->
         </StackPanel>
     </DataTemplate>
 

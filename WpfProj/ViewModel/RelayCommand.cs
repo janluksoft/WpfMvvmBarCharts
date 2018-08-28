@@ -5,9 +5,9 @@ namespace WpfProj.ViewModel
 {
     internal class RelayCommand : ICommand
     {
-        // Czyli mamy dwa delegaty.
-        // 1 delegat) Action,    który będzie przyjmował parametr object,
-        // 2 delegat) Predicate, który również może przyjmować parametr object i zwraca boola. 
+        // Two delegats:
+        // 1 delegat) Action
+        // 2 delegat) Predicate
 
         private readonly Action<object> command;
         private readonly Predicate<object> canExecute;

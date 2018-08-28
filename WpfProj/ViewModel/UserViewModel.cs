@@ -80,7 +80,6 @@ namespace WpfProj.ViewModel
             int idLast = xDriverUsers[iCount - 1].Id;
             var u = new CDriverUser {Id = (idLast+ 1), Name = xu.Name, Surname = xu.Surname, 
                 LapTimeSec = xu.LapTimeSec, PitTimeSec = xu.PitTimeSec };
-            //var u = new CDriverUser { Name = "Peter", Surname = "Thomas" };
             xDriverUsers.Add(u);
         }
 
@@ -96,7 +95,6 @@ namespace WpfProj.ViewModel
         {
             var u = user as CDriverUser;
             MessageBox.Show($"Actual Row: FullName:{u.FullName}");
-            //Users.Remove(u);
         }
         private bool CanMessage(object user)
         {

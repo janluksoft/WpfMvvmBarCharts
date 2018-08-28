@@ -4,17 +4,6 @@ using System.Collections.Generic;
 
 namespace WpfProj.Model
 {
-    public abstract class CObservable_old : INotifyPropertyChanged
-    {
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void RaisePropertyChangedEvent(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-
     public abstract class CObservable : INotifyPropertyChanged
     {
         // boiler-plate
@@ -39,15 +28,5 @@ namespace WpfProj.Model
             OnPropertyChanged(propertyName);
         }
 
-
-        //private string name;
-        //public string Name
-        //{
-        //    get { return name; }
-        //    set { SetField(ref name, value, "Name"); }
-        //}
     }
-
-
-
 }
